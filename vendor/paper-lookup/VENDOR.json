@@ -1,0 +1,11 @@
+{
+  "name": "paper-lookup",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 1 学术证据检索",
+  "applicability_boundary": "11 个学术 API（免 key，stdlib+curl），需联网；离线时不可用需诚实降级",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}

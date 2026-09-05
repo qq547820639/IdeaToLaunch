@@ -1,0 +1,11 @@
+{
+  "name": "exploratory-data-analysis",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 5 运营复盘（EDA 纪律）",
+  "applicability_boundary": "缺失/泄漏审计与 EDA 报告骨架；核心 CLI 本地可用（pandas 在、polars 缺失→自动回退）",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}

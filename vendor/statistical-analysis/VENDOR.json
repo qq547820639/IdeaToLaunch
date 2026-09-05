@@ -1,0 +1,11 @@
+{
+  "name": "statistical-analysis",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 5 运营复盘（显著性/效应量）",
+  "applicability_boundary": "检验选择与报告规范；依赖较重（pymc/pingouin 缺失→贝叶斯部分降级，statsmodels 主路径可用）",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}

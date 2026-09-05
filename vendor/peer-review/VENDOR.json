@@ -1,0 +1,11 @@
+{
+  "name": "peer-review",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 3/4 阶段门对抗评审",
+  "applicability_boundary": "证据边界评审草稿与 claim-evidence 核查；纯标准库离线可用",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}

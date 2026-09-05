@@ -1,0 +1,11 @@
+{
+  "name": "hypothesis-generation",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 2 决策（假设生成）",
+  "applicability_boundary": "证据边界假设+可判别预测+预注册分析计划；是判断合同/ABSTAIN 的前半段；纯标准库离线可用",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}

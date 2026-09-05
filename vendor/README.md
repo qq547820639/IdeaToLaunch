@@ -1,8 +1,8 @@
 # vendor/ — 内置集成的官方技能注册表
 
-> **使用纪律（2026-08-24 起，经真实决策 GO/B+ 冻结确认）：本目录是“按需查阅的资料库”，不是主动加载的模块。** 只有当当前任务显式需要某个专项能力（如“做 DCF 估值”→cashflow-valuation、“画甘特图”→gantt-chart-builder）时才打开对应子目录；不要在学习阶段通读、不要在产出中堆砌多个 vendored 方法论。单一权威冲突时以 `SKILL.md`「单一权威表」为准。
+> **使用纪律（2026-08-24 起，经真实决策 GO/B+ 冻结确认）：本目录是"按需查阅的资料库"，不是主动加载的模块。** 只有当当前任务显式需要某个专项能力（如"做 DCF 估值"→cashflow-valuation、"画甘特图"→gantt-chart-builder）时才打开对应子目录；不要在学习阶段通读、不要在产出中堆砌多个 vendored 方法论。单一权威冲突时以 `SKILL.md`「单一权威表」为准。
 >
-> 本目录以“整体搬运/内置集成”方式并入 Kimi 官方已验证技能。全部内容已完整复制到本地，**离线独立运行，不依赖外部服务或原技能在线状态**。
+> 本目录以"整体搬运/内置集成"方式并入 Kimi 官方已验证技能。全部内容已完整复制到本地，**离线独立运行，不依赖外部服务或原技能在线状态**。
 > 每个子目录含 `VENDOR.json`（来源/版本/适用边界/去重说明/依赖）。
 > 集成日期：2026-08-24（首批 9 个，v3.6）+ 2026-08-24（第二批 12 个，v3.8，补齐环节 3/4/5）。来源：`/app/.agents/skills/`（Kimi 官方技能库）。
 
@@ -55,7 +55,7 @@
 - **SaaS 专项指标分工**：通用单位经济（LTV/CAC/回本期）仍走 calc.py；ARR/MRR/churn/NRR/quick ratio 等 SaaS 专项走 `saas-metrics-coach/` 三脚本。
 - **定价分工**：通用定价方法论以 `references/business-model.md` 为准；SaaS 定价页/档位/提价深化走 `pricing-strategy/`。
 - **风险分工**：风险登记册格式以 `templates/risk-register.md` 为数据契约（R-xx 编号映射为官方脚本的 id/name 字段）；热力图生成走 `risk-heatmap/`。
-- **BP 方法论**：以官方版（investment-memo/fundraising-bp-planner/report-writing）为主体；本体的“数字挂账本编号、数据不足标注、呈现层语言纪律”作为集成覆盖层，不与官方方法论重复。
+- **BP 方法论**：以官方版（investment-memo/fundraising-bp-planner/report-writing）为主体；本体的"数字挂账本编号、数据不足标注、呈现层语言纪律"作为集成覆盖层，不与官方方法论重复。
 - **环节 3 分工（v3.8 新增）**：`templates/prd.md` 保留为 PRD 数据契约格式（可检验判据+假设编号纪律），`idea-to-prd/` 为生成方法论；`templates/roadmap.md` 保留双轨骨架与出口判据，`gantt-chart-builder/` 负责可视化与 CPM；生命周期主权在 `references/product-lifecycle.md`，`iteration-planner/`、`workload-calculator/`、`software-testing-guide/`、`api-doc-gen/` 为软件轨 W2–W5 阶段执行工具；硬件 EVT/DVT/PVT 仍以 product-lifecycle.md 为准，software-testing-guide 仅覆盖软件 QA。
 - **环节 4 分工（v3.8 新增）**：`templates/launch-checklist.md` 保留六线放行声明契约；`compliance-review-planner/` 深化合规线、`tos-clause-scanner/` 覆盖法务线、`process-doc/` 覆盖售后 SOP、`lp-proto-gen/` 生成 GTM 落地页原型。
 - **环节 5 分工（v3.8 新增）**：`okr-planner/` 承担运营期目标管理；决策校准仍以 decision_journal + calc.py 为准，不替代。
@@ -71,22 +71,22 @@
 
 对全部 21 个内置技能适用，优先级高于 vendor 文件原文：
 
-1. **front matter 的“当用户提到 X 时触发”描述仅作存档，不作为加载依据**——加载权只属 IdeaToLaunch 主入口与单一权威表；
-2. **“基于合理假设继续/快速模式/默认值”类指令**：产出的假设与默认值一律挂四态标签（ASSUMED/UNVERIFIED）并回写 research_log 假设台账，不得静默变成事实；
+1. **front matter 的"当用户提到 X 时触发"描述仅作存档，不作为加载依据**——加载权只属 IdeaToLaunch 主入口与单一权威表；
+2. **"基于合理假设继续/快速模式/默认值"类指令**：产出的假设与默认值一律挂四态标签（ASSUMED/UNVERIFIED）并回写 research_log 假设台账，不得静默变成事实；
 3. **英文判定词与色标**：HEALTHY/WATCH/CRITICAL、红黄绿灯、⭐ 星级、🟢🟡🔴 等，面向用户时统一译为中文判定词（健康/及格线边缘/不健康 等）；🟢verified/🟡estimated/🔴assumed 三态映射四态（🔴assumed 细分为 ASSUMED 或 UNVERIFIED，按是否工程性假设判定）；
-4. **以事实口吻出现的无来源数字**（经验法则、基准区间、竞品现价）：引用时挂 ESTIMATED 并注“经验法则/示例数据，引用前须实时核实”；
-5. **docx/PDF/PPTX/位图图表/MCP 引用设施等不可用能力**：按各文件头部“使用边界”补丁降级（Markdown 直出 / HTML/SVG 信息图 / 台账编号人工登记），严禁伪造已执行；
+4. **以事实口吻出现的无来源数字**（经验法则、基准区间、竞品现价）：引用时挂 ESTIMATED 并注"经验法则/示例数据，引用前须实时核实"；
+5. **docx/PDF/PPTX/位图图表/MCP 引用设施等不可用能力**：按各文件头部"使用边界"补丁降级（Markdown 直出 / HTML/SVG 信息图 / 台账编号人工登记），严禁伪造已执行；
 6. **研究/分析产物必须回流工作区账本**，不得只写游离文件。
 
 ## R2 冲突审查存档
 
-37 条冲突（高 3/中 15/低 19）。高危 3 条已就地修补：software-testing-guide（LLM 自主执行测试叙事→只生成资产、结果真实回填）、lp-proto-gen（Social Proof 默认配置→只许真实证据）、pricing-strategy playbook（认证徽章→须持真实证书）。“合理假设直出”3 处（idea-to-prd/fundraising-bp-planner/iteration-planner）与“不可用能力”3 处（report-writing/investment-memo/market-insight-report）均已插入“使用边界”警示块。低危残留（语境噪音、示例数字）不处理，由本节统一规则兜底。
+37 条冲突（高 3/中 15/低 19）。高危 3 条已就地修补：software-testing-guide（LLM 自主执行测试叙事→只生成资产、结果真实回填）、lp-proto-gen（Social Proof 默认配置→只许真实证据）、pricing-strategy playbook（认证徽章→须持真实证书）。"合理假设直出"3 处（idea-to-prd/fundraising-bp-planner/iteration-planner）与"不可用能力"3 处（report-writing/investment-memo/market-insight-report）均已插入"使用边界"警示块。低危残留（语境噪音、示例数字）不处理，由本节统一规则兜底。
 
 ## R4 遗留记录（2026-08-24）
 
 - compliance-review-planner 法规表以数据/隐私为中心（GDPR/PIPL/广告法），**无实体产品安全标准**；实体产品项目使用时须自行补查（如 GB 18401 纺织贴肤、GB 6675 玩具年龄边界、GB/T 5296.4 使用说明、ISO 10993 皮肤接触、CCC 目录），并在结论卡标注来源与时效。
 - lp-proto-gen 空 Social Proof 数组会在页面上留白块（已知小瑕疵）；生成后人工或脚本检查隐藏空区块。
-- pipeline 放行声明识别为启发式（文件名+关键词+签署行+不放行判定词），不解析六线内容真伪——签署真实性由“声明人必须为人类”的纪律兜底，机器不做实质审查。
+- pipeline 放行声明识别为启发式（文件名+关键词+签署行+不放行判定词），不解析六线内容真伪——签署真实性由"声明人必须为人类"的纪律兜底，机器不做实质审查。
 
 ## 第三批内置（v4.8，2026-09-05）：科研严谨性 + 专利 + 写作降噪（14 个）
 

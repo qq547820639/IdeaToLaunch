@@ -1,0 +1,11 @@
+{
+  "name": "market-research-reports",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 1 市场研究（方法论内核升级）",
+  "applicability_boundary": "claim↔source 映射、TAM 对账、禁止虚构付费数据纪律——作为 references/market-research.md 的强化参照，不替换四态/结论卡体系",
+  "dedup_note": "作为方法论升级覆盖 vendor/market-insight-report 的诚实性缺口",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "patent-disclosure-skill",
+  "source": "handsomestWei/patent-disclosure-skill v4.1.0",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 3→4 合规线 IP（专利点挖掘+交底书）",
+  "applicability_boundary": "交底书撰写核心离线可用；查新/著录检索需联网（自带降级 WebSearch）；patent-reader（Obsidian 耦合）与 patent-oa（需案例库）暂缓启用；保留'草稿须人审''查新≠完整 FTO'护栏",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}

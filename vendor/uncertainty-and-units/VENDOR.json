@@ -1,0 +1,11 @@
+{
+  "name": "uncertainty-and-units",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 3 硬件 BOM/成本（单位与量纲审计）",
+  "applicability_boundary": "量级合理性体检与单位换算；审计器纯标准库，换算器需 pint/uncertainties（缺失→降级为审计器可用）",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}

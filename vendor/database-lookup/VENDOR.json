@@ -1,0 +1,11 @@
+{
+  "name": "database-lookup",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 1/5 一手数据源（经济/专利/人口）",
+  "applicability_boundary": "78 个公共数据库检索契约，需联网；裁剪使用时优先经济金融+专利+人口统计",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}
