@@ -1,0 +1,11 @@
+{
+  "name": "statistical-power",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 2→3 最小实验（样本量/功效）",
+  "applicability_boundary": "样本量/MDE/功效曲线；脚本需 statsmodels/scipy（可用）/pingouin（缺失→对应功能降级）",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}
