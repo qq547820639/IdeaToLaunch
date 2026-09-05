@@ -1,0 +1,11 @@
+{
+  "name": "deslop",
+  "source": "every-app/open-seo .agents/skills/deslop",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 4 内容资产 / 环节 4.5 写作（去 AI 味）",
+  "applicability_boundary": "写作去 AI 味准则，纯文档离线可用；用于可读性工程模块 8 的语言降噪",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}
