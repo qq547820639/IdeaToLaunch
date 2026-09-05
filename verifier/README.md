@@ -16,3 +16,7 @@
 - 测量对象：v1 全部 6 项 + 新增 C7（标签体系治理：decision-quality.md 分工与映射节、product-baseline 四态声明）。
 - 与上一版差异：新增 C7；v1 各检查项逻辑不变。
 - 运行方式：`python3 verifier/v2/verify.py`。
+
+## v3（创建于 2026-09-05）
+- 测量对象：v2 全部 7 项；唯一变更 C5 的 vendor 目录数 21→35（第三批内置 14 个技能：科学技能集 12 + deslop + patent-disclosure-skill）。
+- 运行方式：`python3 verifier/v3/verify.py`。
