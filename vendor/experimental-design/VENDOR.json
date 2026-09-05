@@ -1,0 +1,11 @@
+{
+  "name": "experimental-design",
+  "source": "K-Dense-AI/scientific-agent-skills（Kimi 兼容官方技能集）",
+  "vendored_at": "2026-09-05",
+  "license": "MIT（随附 LICENSE）",
+  "module_mapping": "环节 2→3 最小实验设计（DOE）",
+  "applicability_boundary": "ABSTAIN 后的实验设计方法论；脚本需 numpy/pandas/pyDOE3（pyDOE3 当前环境缺失→析因设计部分降级，随机化/区组可用）",
+  "dedup_note": "无",
+  "dependencies": "见适用边界中的降级说明；核心方法论离线可用",
+  "integration": "IdeaToLaunch 内部模块，离线独立运行"
+}
